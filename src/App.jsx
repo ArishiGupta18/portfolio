@@ -473,7 +473,7 @@ function App() {
 
             <div className="social-links">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/arishi-gupta-07a86a200/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-btn linkedin"
@@ -489,7 +489,7 @@ function App() {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://leetcode.com"
+                href="https://leetcode.com/u/Arishi_Gupta/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-btn leetcode"
