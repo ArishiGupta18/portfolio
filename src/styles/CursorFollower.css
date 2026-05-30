@@ -1,0 +1,105 @@
+.cursor-trail {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.8), rgba(240, 147, 251, 0.4));
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+  animation: trailFade 0.8s ease-out forwards;
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.8),
+                0 0 20px rgba(240, 147, 251, 0.4),
+                0 0 30px rgba(102, 126, 234, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(102, 126, 234, 1),
+                0 0 25px rgba(240, 147, 251, 0.6),
+                0 0 40px rgba(102, 126, 234, 0.3);
+  }
+}
+
+@keyframes dotPulseHover {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(240, 147, 251, 1),
+                0 0 30px rgba(240, 147, 251, 0.6),
+                0 0 45px rgba(240, 147, 251, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(240, 147, 251, 1),
+                0 0 40px rgba(240, 147, 251, 0.8),
+                0 0 60px rgba(240, 147, 251, 0.4);
+  }
+}
+
+@keyframes trailFade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+}
+
+@media (min-width: 1025px) {
+  .cursor-follower,
+  .cursor-dot {
+    display: block;
+  }
+  body {
+    cursor: none;
+  }
+}
+
+a, button, .skill-tag, .tech-badge, .social-btn, .contact-link,
+.nav-menu a, .btn, .project-card, .timeline-item, .education-card {
+  position: relative;
+}
+
+a:hover, button:hover {
+  cursor: none;
+}
+
+.dark .cursor-follower {
+  border-color: #c084fc;
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.6),
+              inset 0 0 15px rgba(192, 132, 252, 0.3);
+}
+
+.dark .cursor-dot {
+  background: #c084fc;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.8),
+              0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+.dark .cursor-follower.hovering {
+  border-color: #f093fb;
+  box-shadow: 0 0 30px rgba(240, 147, 251, 0.9),
+              inset 0 0 20px rgba(240, 147, 251, 0.5),
+              0 0 50px rgba(192, 132, 252, 0.3);
+}
+
+.dark .cursor-dot.hovering {
+  background: #f093fb;
+  box-shadow: 0 0 15px rgba(240, 147, 251, 1),
+              0 0 30px rgba(240, 147, 251, 0.6),
+              0 0 45px rgba(240, 147, 251, 0.3);
+}
+
+@media (max-width: 1024px) {
+  body {
+    cursor: auto;
+  }
+  .cursor-follower,
+  .cursor-dot,
+  .cursor-trail {
+    display: none !important;
+  }
+}
