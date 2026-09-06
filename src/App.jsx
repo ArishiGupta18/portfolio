@@ -444,10 +444,6 @@ function App() {
                 <span className="contact-icon">📧</span>
                 <span>arishi.guptaa@gmail.com</span>
               </a>
-              <a href="tel:+919001296981" className="contact-link">
-                <span className="contact-icon">📱</span>
-                <span>+91-9001296981</span>
-              </a>
             </div>
 
             <div className="social-links">

@@ -99,7 +99,6 @@ npm run build
 ## 📧 Contact
 
 - **Email**: arishi.guptaa@gmail.com
-- **Phone**: +91-9001296981
 - **GitHub**: https://github.com/ArishiGupta18
 - **LinkedIn**: [Profile](https://www.linkedin.com/in/arishi-gupta-07a86a200/)
 - **LeetCode**: [Profile](https://leetcode.com/u/Arishi_Gupta/)
